@@ -1,0 +1,48 @@
+
+.video_box {background: #fff; overflow: hidden; padding: 50px 0; text-align: center; color: #4a4a4a; }
+.video_box h2, .maparea_box h2 {font-size: 28px; color: #1d3a8d; font-weight: normal; line-height: normal; padding-bottom: 20px; text-align: center}
+.video_box h2 span, .maparea_box h2 span {display: block; text-transform: uppercase; font-weight: bold; font-size: 42px; }
+.video_box p {line-height: 22px}
+.main_video {margin: 25px 0; clear: both; position: relative}
+
+.maparea_box {background: #efeeee; overflow: hidden; padding: 50px 0;}
+.world_map {background: url(../images/world_map.png) no-repeat center center; min-height: 470px; position: relative}
+
+.animated_map {width: 604px; height: 604px; margin: 30px auto; position: relative; z-index: 2;}
+.animated_map .welcome_text {text-align: center; padding: 225px 100px 0;   }
+.animated_map .vote_button {position: absolute; bottom: 0; right: 50px; background: #f6bb0e; font-family: inherit; font-size: 25px; color: #1d3a8d;
+border: none; cursor: pointer; z-index: 3;}
+.animated_map .welcome_text.hidden {display: none;}
+.animated_map .welcome_text p {font-size: 24px; color: #1d3a8d; line-height: normal; margin-bottom: 20px}
+
+.country {position: absolute; left: 50%; top: 110px; width: 480px; margin-left: -240px; z-index: 10}
+.country_item {display: none; padding-left: 170px}
+.country_item.active {display: block;}
+.country_item ul {float: left; margin-right: 5px }
+.country_item ul li {padding-left: 20px; margin-bottom: 1px; max-width: 130px;}
+.country_item ul li.selected {background: url(../images/selected.png) no-repeat 0 center;}
+.country_item ul li a {display: inline-block; line-height: 21px; padding: 0 5px; text-decoration: none; font-size: 15px; }
+.country_item ul li a:hover, .country_item ul li.selected a {background: #ec9102; color: #fff; }
+
+.country_item.asia {padding-left: 100px}
+.country_item.north_america {padding-left: 130px}
+.country_item.europe {padding-left: 100px}
+
+#diag-large {position: absolute; left: -3px; top: -3px;}
+.votes {}
+.votes > ul > li {position: absolute; left: 153px; top: -10px;}
+.votes > ul > li .percent {background: url(../images/vote.png) no-repeat 0 0; width: 81px; height: 81px; line-height: 81px; text-align: center; font-size: 22px; font-weight: bold; margin: 0 auto 3px; text-indent: 5px  }
+.votes > ul > li .percent .sup {font-size: 13px; font-weight: normal; position: relative; top: -8px; left: -2px}
+.votes > ul > li .percent canvas {position: absolute; top: -5px; left: -5px;}
+.votes > ul > li .name {position: absolute; left: 50%; margin-left: -200px; width: 400px;font-size: 16px; color: #707070; white-space: nowrap; text-align: center }
+.votes > ul > li .name span {height: 40px; display: inline-block;}
+.votes > ul > li .top_icon span {background: url(../images/top_icon.png) no-repeat 0 0; padding-left: 23px}
+.votes > ul > li+li {top: 123px; left: 83px;}
+.votes > ul > li+li+li {top: 253px; left: 60px;}
+.votes > ul > li+li+li+li {top: 381px; left: 83px;}
+.votes > ul > li+li+li+li+li {top: 512px; left: 150px;}
+.votes > ul > li+li+li+li+li+li {top: -10px; right: 153px; left: auto}
+.votes > ul > li+li+li+li+li+li+li {top: 123px; right: 83px;}
+.votes > ul > li+li+li+li+li+li+li+li {top: 253px; right: 53px;}
+.votes > ul > li+li+li+li+li+li+li+li+li {top: 381px; right: 83px;}
+.votes > ul > li+li+li+li+li+li+li+li+li+li {top: 512px; right: 150px;}

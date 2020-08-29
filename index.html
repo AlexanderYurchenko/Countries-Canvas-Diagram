@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <title>ClickDealer Meet up 2014</title>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="./css/main.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" media="all" />
+        <script type="text/javascript" src="js/Chart.js"></script>
+        <!--[if lte IE 8]>
+        <script src="js/excanvas.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                $('.b-popup .close, .b-popup-overlay').on('click', function() {
+                    $('.b-popup-overlay').removeClass('active');
+                    $('.b-popup').removeClass('active');
+                });
+
+
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="b-content">
+            <div class="maparea_box">
+                <div class="b-main">
+                    <h2>Let’s go round again and turn our next meeting into even a greater event.<br /> His time you choose the location for our next Meetup! <span>Don’t procrastinate!</span></h2>
+                    <div class="world_map">
+                        <div class="animated_map">
+                            <button class="vote_button">Vote</button>
+                            <canvas id="diag-large" width="610" height="610"></canvas>
+                            <div class="welcome_text">
+                                <p>Put your vote on record<br /> in two quick steps!</p>
+                                <p>First, select and click on the continent and then on the country.</p>
+                            </div>
+                            <div class="country">
+                                <div class="country_item africa">
+                                    <ul>
+                                        <li><a href="#">Tunisia</a></li>
+                                        <li><a href="#">Tanzania</a></li>
+                                        <li><a href="#">South Africa</a></li>
+                                        <li><a href="#">Namibia</a></li>
+                                        <li><a href="#">Botswana</a></li>
+                                        <li><a href="#">Zambia</a></li>
+                                    </ul>
+                                </div>
+                                <div class="country_item asia">
+                                    <ul>
+                                        <li><a href="#">Cambodia</a></li>
+                                        <li><a href="#">China</a></li>
+                                        <li><a href="#">India</a></li>
+                                        <li><a href="#">Indonesia</a></li>
+                                        <li><a href="#">Israel</a></li>
+                                        <li><a href="#">Japan</a></li>
+                                        <li><a href="#">Jordan</a></li>
+                                        <li><a href="#">Laos</a></li>
+                                        <li><a href="#">Lebanon</a></li>
+                                        <li><a href="#">Malaysia</a></li>
+                                        <li><a href="#">Maldives</a></li>
+                                        <li><a href="#">Nepal</a></li>
+                                        <li><a href="#">The Philippines</a></li>
+                                        <li><a href="#">Qatar</a></li>
+                                        <li><a href="#">Russia</a></li>
+                                        <li><a href="#">Saudi Arabia</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Singapore</a></li>
+                                        <li><a href="#">Sri Lanka</a></li>
+                                        <li><a href="#">Taiwan</a></li>
+                                        <li><a href="#">Thailand</a></li>
+                                        <li><a href="#">Turkey</a></li>
+                                        <li><a href="#">United</a></li>
+                                        <li><a href="#">Arab Emirates</a></li>
+                                        <li><a href="#">Vietnam</a></li>
+                                    </ul>
+                                </div>
+                                <div class="country_item australia">
+                                    <ul>
+                                        <li><a href="#">Australia</a></li>
+                                        <li><a href="#">Fiji</a></li>
+                                        <li><a href="#">Samoa</a></li>
+                                        <li><a href="#">Solomon Islands</a></li>
+                                        <li><a href="#">New Zealand</a></li>
+                                        <li><a href="#">Papua New Guinea</a></li>
+                                    </ul>
+                                </div>
+                                <div class="country_item europe">
+                                    <ul>
+                                        <li><a href="#">Armenia</a></li>
+                                        <li><a href="#">Austria</a></li>
+                                        <li><a href="#">Azerbaijan</a></li>
+                                        <li><a href="#">Belarus</a></li>
+                                        <li><a href="#">Belgium</a></li>
+                                        <li><a href="#">Bosnia & Herzegovina</a></li>
+                                        <li><a href="#">Bulgaria</a></li>
+                                        <li><a href="#">Croatia</a></li>
+                                        <li><a href="#">Cyprus</a></li>
+                                        <li><a href="#">Czech Republic</a></li>
+                                        <li><a href="#">Denmark</a></li>
+                                        <li><a href="#">Finland</a></li>
+                                        <li><a href="#">France</a></li>
+                                        <li><a href="#">Georgia</a></li>
+                                        <li><a href="#">Germany</a></li>
+                                        <li><a href="#">Greece</a></li>
+                                        <li><a href="#">Hungary</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Ireland</a></li>
+                                        <li><a href="#">Italy</a></li>
+                                        <li><a href="#">Luxembourg</a></li>
+                                        <li><a href="#">Macedonia</a></li>
+                                        <li><a href="#">Malta</a></li>
+                                        <li><a href="#">The Netherlands</a></li>
+                                        <li><a href="#">Norway</a></li>
+                                        <li><a href="#">Poland</a></li>
+                                        <li><a href="#">Portugal</a></li>
+                                        <li><a href="#">Russia</a></li>
+                                        <li><a href="#">San Marino</a></li>
+                                        <li><a href="#">Slovakia</a></li>
+                                        <li><a href="#">Sweden</a></li>
+                                        <li><a href="#">Switzerland</a></li>
+                                        <li><a href="#">Turkey</a></li>
+                                        <li><a href="#">Ukraine</a></li>
+                                        <li><a href="#">United Kingdom</a></li>
+                                    </ul>
+                                </div>
+                                <div class="country_item north_america">
+                                    <ul>
+                                        <li><a href="#">Antigua & Barbuda</a></li>
+                                        <li><a href="#">Bahamas</a></li>
+                                        <li><a href="#">Barbados</a></li>
+                                        <li><a href="#">Canada</a></li>
+                                        <li><a href="#">Costa Rica</a></li>
+                                        <li><a href="#">Cuba</a></li>
+                                        <li><a href="#">Dominica</a></li>
+                                        <li><a href="#">Dominican Republic</a></li>
+                                        <li><a href="#">El Salvador</a></li>
+                                        <li><a href="#">Guatemala</a></li>
+                                        <li><a href="#">Haiti</a></li>
+                                        <li><a href="#">Jamaica</a></li>
+                                        <li><a href="#">Mexico</a></li>
+                                        <li><a href="#">Panama</a></li>
+                                        <li><a href="#">United States of America</a></li>
+                                    </ul>
+                                </div>
+                                <div class="country_item south_america">
+                                    <ul>
+                                        <li><a href="#">Argentina</a></li>
+                                        <li><a href="#">Bolivia</a></li>
+                                        <li><a href="#">Brazil</a></li>
+                                        <li><a href="#">Chile</a></li>
+                                        <li><a href="#">Colombia</a></li>
+                                        <li><a href="#">Ecuador</a></li>
+                                        <li><a href="#">Guyana</a></li>
+                                        <li><a href="#">Paraguay</a></li>
+                                        <li><a href="#">Peru</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="votes">
+                            <ul>
+                                <li>
+                                    <div class="percent">
+                                        <canvas id="diag-small-1" class="diag-small colored" width="92" height="92"></canvas>
+                                        <span class="value">30,6</span>
+                                        <span class="sup">%</span>
+                                    </div>
+                                    <p class="name top_icon">
+                                        <span>Papua New Guinea</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="percent">
+                                        <canvas id="diag-small-2" class="diag-small" width="90" height="90"></canvas>
+                                        <span class="value">18</span>
+                                        <span class="sup">%</span>
+                                    </div>
+                                    <p class="name">
+                                        <span>The Netherlands</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="percent">
+                                        <canvas id="diag-small-3" class="diag-small" width="90" height="90"></canvas>
+                                        <span class="value">16</span>
+                                        <span class="sup">%</span>
+                                    </div>
+                                    <p class="name">
+                                        <span>Switzerland</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="percent">
+                                        <canvas id="diag-small-4" class="diag-small" width="90" height="90"></canvas>
+                                        <span class="value">10</span>
+                                        <span class="sup">%</span>
+                                    </div>
+                                    <p class="name">
+                                        <span>Republic Denmark</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="percent">
+                                        <canvas id="diag-small-5" class="diag-small" width="90" height="90"></canvas>
+                                        <span class="value">9</span>
+                                        <span class="sup">%</span>
+                                    </div>
+                                    <p class="name">
+                                        <span>Germany</span>
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <div class="percent">
+                                        <canvas id="diag-small-6" class="diag-small" width="90" height="90"></canvas>
+                                        <span class="value">8</span>
+                                        <span class="sup">%</span>
+                                    </div>
+                                    <p class="name">
+                                        <span>Belarus</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="percent">
+                                        <canvas id="diag-small-7" class="diag-small" width="90" height="90"></canvas>
+                                        <span class="value">7</span>
+                                        <span class="sup">%</span>
+                                    </div>
+                                    <p class="name">
+                                        <span>Slovakia</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="percent">
+                                        <canvas id="diag-small-8" class="diag-small" width="90" height="90"></canvas>
+                                        <span class="value">6 </span>
+                                        <span class="sup">%</span>
+                                    </div>
+                                    <p class="name">
+                                        <span>Finland</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="percent">
+                                        <canvas id="diag-small-9" class="diag-small" width="90" height="90"></canvas>
+                                        <span class="value">5</span>
+                                        <span class="sup">%</span>
+                                    </div>
+                                    <p class="name">
+                                        <span>Cyprus</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="percent">
+                                        <canvas id="diag-small-10" class="diag-small" width="90" height="90"></canvas>
+                                        <span class="value">3</span>
+                                        <span class="sup">%</span>
+                                    </div>
+                                    <p class="name">
+                                        <span>Italy</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div><!--class="maparea_box"-->
+        </div>
+
+
+        <div class="b-footer">
+            <div class="b-main">
+                <div class="top-block">
+                    <ul class="b-footer-menu">
+                        <li><a href="./terms_and_conditions.pdf">Terms & Conditions</a></li>
+                        <li><a href="http://affiliates.clickdealer.com">Affilate portal</a>
+                        </li>
+                    </ul>
+                    <div class="b-footer-contact">
+                        <i class="footer-logo"></i>
+                        <p class="adress">
+                            27 Old Gloucester Street <br>
+                            London WC1N 3AX, United Kingdom
+                        </p>
+                    </div>
+                </div>
+                <div class="bottom-block">
+                    <div class="b-footer-copy">
+                        &copy; 2012-2013 ClickDealer.com. All rights reserved.
+                    </div>
+                    <div class="b-footer-logos">
+                        <span class="label">Powered by:</span>
+                        <i class="pic db"><span>DataBrain</span></i>
+                        <i class="pic pp"><span>PayPal</span></i>
+                        <i class="pic cm"><span>CAKE Marketing</span></i>
+                        <i class="pic po"><span>Payoneer</span></i>
+                        <i class="pic rr"><span>RingRevenue</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
